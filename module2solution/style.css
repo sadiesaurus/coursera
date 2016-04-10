@@ -1,0 +1,80 @@
+
+/********** Base styles **********/
+
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.container {
+  border: 1px solid black;
+  background-color: #bfbfbf;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+  color: black;
+}
+
+p {
+  padding: 30px 10px 10px 10px;
+} 
+
+  h5 {
+  border: 1px solid black;
+  text-align: center;
+  font-family: Verdana;
+  font-weight: bold;
+  width: 140px;
+  height: 40px;
+  padding: 5px;
+  float: right;
+  margin-top: -1px;
+  margin-right: -1px;
+}
+
+.ipa {
+  background-color: #ff9999;
+}
+.belgian {
+  background-color: #800000;
+  color: white;
+}
+.lager {
+  background-color: #ffffcc;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left; 
+    width: 33.33%;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 105.5%;
+    position: relative;
+    right: 25px;
+    top: 25px;
+  }
+}
